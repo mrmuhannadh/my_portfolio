@@ -76,15 +76,15 @@ class _AppDrawerState extends State<AppDrawer> {
                 style: AppStyles.drawerStyles(),
               ),
               onTap: () {
-                if (selectedIndex != 3) {
+                if (selectedIndex != 2) {
                   Navigator.pushNamed(
                       context, AppStrings.experienceScreenRoute);
                   setState(() {
-                    selectedIndex = 3;
+                    selectedIndex = 2;
                   });
                 }
               },
-              selected: selectedIndex == 3,
+              selected: selectedIndex == 2,
               selectedTileColor: Colors.black,
               selectedColor: const Color.fromRGBO(0, 183, 244, 1),
             ),

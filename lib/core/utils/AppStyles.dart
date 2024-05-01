@@ -4,9 +4,19 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppStyles {
   static TextStyle landingScreenViewTextStyle() {
     return TextStyle(
-      fontFamily: 'Jersey',
-      fontWeight: FontWeight.bold,
+      fontFamily: 'Gecko',
       fontSize: 30.sp,
+      color: Colors.white,
+      overflow: TextOverflow.visible,
+    );
+  }
+
+  static TextStyle subTitleTextStyle() {
+    return TextStyle(
+      fontFamily: 'Plaguard',
+      fontSize: 25.sp,
+      color: Colors.white,
+      overflow: TextOverflow.visible,
     );
   }
 
@@ -14,7 +24,7 @@ class AppStyles {
     return TextStyle(
       fontFamily: 'MPLUSCodeLatin',
       fontWeight: FontWeight.bold,
-      fontSize: 15.sp,
+      fontSize: 10.sp,
       color: Colors.deepPurple,
     );
   }

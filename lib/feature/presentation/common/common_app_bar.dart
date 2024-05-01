@@ -1,6 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/utils/AppImages.dart';
-import 'package:my_portfolio/core/utils/AppStrings.dart';
 import 'package:my_portfolio/core/utils/AppStyles.dart';
 
 class CommonAppBar extends StatefulWidget implements PreferredSizeWidget {
@@ -18,7 +19,7 @@ class _CommonAppBarState extends State<CommonAppBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.black,
+      centerTitle: true,
       flexibleSpace: Container(
         decoration: BoxDecoration(
           image: const DecorationImage(
@@ -31,12 +32,15 @@ class _CommonAppBarState extends State<CommonAppBar> {
               colors: <Color>[Colors.blue.shade900, Colors.blue]),
         ),
       ),
-      leading: IconButton(
-        icon: Image.asset(
-          AppImages.drawerButton,
-          width: 48,
+      leading: Transform.rotate(
+        angle: pi,
+        child: IconButton(
+          icon: Image.asset(
+            AppImages.drawerButton,
+            width: 48,
+          ),
+          onPressed: () => Scaffold.of(context).openDrawer(),
         ),
-        onPressed: () => Scaffold.of(context).openDrawer(),
       ),
       title: Text(
         widget.title,

@@ -38,6 +38,13 @@ dependencies:
   particle_field: ^1.0.0
   model_viewer_plus: ^1.7.2
   glassmorphism_ui: ^0.3.0
+  footer:
+  animated_background: ^2.0.0
+  slide_to_act: ^2.0.2
+  convex_bottom_bar: ^3.2.0
+  curved_labeled_navigation_bar: ^2.0.2
+  draggable_home: ^1.0.5
+  syncfusion_flutter_charts: ^25.1.41+2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -71,7 +78,9 @@ flutter:
     - images/OBJ/anim.obj
     - images/PNG/menu_button.png
     - images/PNG/app_bar_bg.png
-    - images/GIF/menu_button.gif
+    - images/PNG/myImage.png
+    - images/GIF/menu.gif
+    - images/PNG/pencil.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -89,13 +98,26 @@ flutter:
     - family: MPLUSCodeLatin
       fonts:
         - asset: fonts/MPLUSCodeLatin-VariableFont_wdth,wght.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
     - family: Jersey
       fonts:
         - asset: fonts/Jersey25-Regular.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+    - family: Confetti
+      fonts:
+        - asset: fonts/ConfettiStream.ttf
+    - family: Dkcarteblanche
+      fonts:
+        - asset: fonts/Dkcarteblanche.otf
+    - family: Gecko
+      fonts:
+        - asset: fonts/Gecko.ttf
+    - family: MinnePetat
+      fonts:
+        - asset: fonts/MinnePetat.ttf
+    - family: Plaguard
+      fonts:
+        - asset: fonts/Plaguard.otf
+
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

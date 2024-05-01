@@ -29,7 +29,6 @@ class RouteGenerator {
           type: PageTransitionType.fade,
         );
       default:
-        // If there is no such named route, return null.
         return null;
     }
   }

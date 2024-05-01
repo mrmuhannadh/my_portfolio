@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/core/utils/AppStrings.dart';
 import 'package:my_portfolio/feature/presentation/common/common_app_bar.dart';
 import 'package:my_portfolio/feature/presentation/common/common_app_drawer.dart';
+import 'package:my_portfolio/feature/presentation/common/common_bottom_nav_bar.dart';
 
 class ExperienceScreenView extends StatefulWidget {
   const ExperienceScreenView({super.key});
@@ -18,7 +19,10 @@ class _ExperienceScreenViewState extends State<ExperienceScreenView> {
         title: AppStrings.experienceTitle,
       ),
       drawer: AppDrawer(
-        selectedIndex: 3,
+        selectedIndex: 2,
+      ),
+      bottomNavigationBar: CommonBottomNavigationBar(
+        selectedIndex: 2,
       ),
     );
   }
